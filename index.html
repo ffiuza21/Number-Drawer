@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Sorteador de números</title>
+    <title>Number Drawer</title>
 </head>
 
 <body>
@@ -16,27 +16,27 @@
         <div class="container__conteudo">
             <div class="container__informacoes">
                 <div class="container__texto">
-                    <h1>Sorteador<span class="container__texto-azul"> de números</span></h1>
+                    <h1>Number<span class="container__texto-azul"> Drawer</span></h1>
 
                     <div class="container__campo">
-                        <label class="texto__paragrafo">Quantidade de números</label>
-                        <input class="container__input" id="quantidade" type="number" min="1">
+                        <label class="texto__paragrafo">Number Quantity</label>
+                        <input class="container__input" id="quantity" type="number" min="1">
                     </div>
                     
                     <div class="container__campo">
-                        <label class="texto__paragrafo">Do número</label>
-                        <input class="container__input" id="de" type="number" min="1">
+                        <label class="texto__paragrafo">Inicial Number</label>
+                        <input class="container__input" id="inicial" type="number" min="1">
                     </div>
                     
                     <div class="container__campo">
-                        <label class="texto__paragrafo">Até o número</label>
-                        <input class="container__input" id="ate" type="number" min="1">
+                        <label class="texto__paragrafo">Limit Number</label>
+                        <input class="container__input" id="limit" type="number" min="1">
                     </div>
                 </div>
                 
                 <div class="chute container__botoes">
-                    <button onclick="sortear()" id="btn-sortear" class="container__botao">Sortear</button>
-                    <button onclick="reiniciar()" id="btn-reiniciar" class="container__botao-desabilitado" >Reiniciar</button>
+                    <button onclick="draw()" id="btn-sortear" class="container__botao">Draw</button>
+                    <button onclick="restart()" id="btn-reiniciar" class="container__botao-desabilitado" >Restart</button>
                 </div>
 
                 <div class="container__texto" id="resultado">

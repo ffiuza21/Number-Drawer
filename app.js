@@ -4,4 +4,9 @@
 // botao de sortear
 // botão de reiniciar
 
-33333
+function draw () {
+    let quantity = document.getElementById('quantity').value;
+    let inicial = document.getElementById('inicial').value;
+    let limit = document.getElementById('limit').value;
+    alert(`Quantity: ${quantity} Inicial Number: ${inicial} Limit Number: ${limit}`);
+}
