@@ -3,6 +3,17 @@ function draw() {
     let inicial = parseInt(document.getElementById('inicial').value);
     let limit = parseInt(document.getElementById('limit').value);
 
+    if (inicial >= limit) {
+        alert(`Error: The inicial number can't be greater or equal than the limit number! Please insert a inicial number lower than the limit number`);
+            return;
+    }
+
+    if (quantity > (limit - inicial + 1)) {
+        alert(`Error: The quantity value can't be greater than the possible numbers`);
+        return;
+    }
+
+
     let drawn = [];
     let number;
 
